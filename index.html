@@ -5,6 +5,31 @@
   <title>Glow</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    background-image: url( "img/1200.png" );
+  }
+  /* Tablet */
+  @media ( min-width: 760px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url( "img/760.png" );
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1200px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url( "img/1200.png" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+
 </head>
 <body>
   <header class="main-header">
@@ -16,39 +41,42 @@
     </div>
   </header>
   <main class="main-content">
-    <div class="main-content__wrapper">
-      <section class="main-content__features features">
-          <div class="features__item">
-            <h2 class="features__header">First Great Featur</h2>
-            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu. </p>
-          </div>
-          <div class="features__item">
-            <h2 class="features__header">Second Great Feature</h2>
-            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu. </p>
-          </div>
-          <div class="features__item">
-            <h2 class="features__header">Third Great Feature</h2>
-            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu. </p>
-          </div>
-          <div class="features__item">
-            <h2 class="features__header">Fourth Great Feature</h2>
-            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu. </p>
-          </div>
-      </section>
+    <section class="main-content__features features">
+      <div class="features__container">
+        <div class="features__item">
+          <h2 class="features__header">First Great Featur</h2>
+          <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu. </p>
+        </div>
+        <div class="features__item">
+          <h2 class="features__header">Third Great Feature</h2>
+          <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu. </p>
+        </div>
+        <div class="features__item">
+          <h2 class="features__header">Second Great Feature</h2>
+          <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu. </p>
+        </div>
+        <div class="features__item">
+          <h2 class="features__header">Fourth Great Feature</h2>
+          <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu. </p>
+        </div>
+      </div>
+    </section>
 
-      <section class="main-content__description">
-        <div class="main-content__wrapper">
+    <section class="main-content__description">
+      <div class="description__container">
+        <div class="description__text">
           <h3 class="description__header">Whats Glow all About?</h3>
           <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. 
 
-          Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+            Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
           <ul class="description__list">
-            <li class="description__item">Lorem ipsum dolor sit amet</li>
-            <li class="description__item">Lorem ipsum dolor sit amet</li>
+            <li class="description__item"><p>Lorem ipsum dolor sit amet</p></li>
+            <li class="description__item"><p>Lorem ipsum dolor sit amet</p></li>
           </ul>
-          <video controls src="img/video.mp4" width="500px" height="310px"></video>
         </div>
-      </section>
+        <iframe class="description__video" src="https://player.vimeo.com/video/98364812" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </section>
       section.main-content__advantages>h4.advantages__heading+p.advantages__text+table
     </div>
   </main>

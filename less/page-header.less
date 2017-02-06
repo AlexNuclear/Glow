@@ -1,8 +1,13 @@
+
 .main-header {
-	.container();
-	margin-bottom: 435px;
-	margin-top: 235px;
-	padding-left: 511px;
+    width: 188px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 115px;
+    margin-bottom: 296px;
+    margin-bottom: 453px;
+    display: block;
+    position: relative;
 }
 
 .store-buttons__item {
@@ -35,4 +40,14 @@ a.main-header__logo {
     flex-direction: row;
     justify-content: space-between;
     width: 186px;
+}
+
+.main-header:before {
+	content: '';
+    position: absolute;
+    height: 740px;
+    width: 404px;
+    background: url(../img/iphone.png) no-repeat ;
+    left: -135px;
+    top: 288px;
 }

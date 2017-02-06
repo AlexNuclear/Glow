@@ -11,7 +11,7 @@
     "gulp-less": "3.3.0",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
-    "pixel-glass": "^1.0.11"
+    "pixel-glass": "^1.0.12"
   },
   "scripts": {
     "test": "editorconfig-cli",
