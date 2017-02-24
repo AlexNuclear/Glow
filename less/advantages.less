@@ -1,5 +1,6 @@
 .advantages {
 	.container();
+	margin-bottom: 77px;
 }
 
 .advantages__table {
@@ -11,7 +12,8 @@
 	border: #e3e3e3 1px solid;
 	border-top:none;
 	border-left: none;
-	min-height: 278px;
+	width: 382px;
+    height: 256px;
 }
 
 td.advantages__data:nth-child(3) {
@@ -45,4 +47,18 @@ td.advantages__data:nth-child(3) {
 
 .advantages__img {
 	margin-top: 28px;
+}
+
+tr:nth-child(2) td {
+    border-bottom: none;
+}
+
+table.advantages__table::before {
+	content: '';
+	background-image: url(../img/white-square.jpg);
+	background-repeat: no-repeat;
+	top: 50px;
+	left: 50px;
+	height: 40px;
+	width: 80px;
 }
